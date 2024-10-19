@@ -1,0 +1,46 @@
+
+/* Cart Icon Styling */
+.floating-cart 
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+
+.floating-cart .cart-count 
+{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.cart-icon 
+{
+    font-size: 30px; 
+    text-decoration: none; 
+    color: black; 
+    background-color: #191919;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+
+.cart-icon:hover 
+{
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+
+.pagarBtn, .virtualListCart
+{
+    visibility: hidden;
+}

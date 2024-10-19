@@ -1,0 +1,182 @@
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #07A4A9, #FFB70D); /* Gradient background */
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite; /* Gradient animation */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Flex container for footer content */
+.contenedorFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Styling for footer icons */
+.footer_columna2_cajita_redes img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+/* Styling for the footer logo */
+.footer_columna1_contenedor_img img {
+    width: 18rem;
+}
+
+/* Align footer logo container */
+.footer_columna1_contenedor_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Styling for text inside footer sections */
+.footer_columna3_cajita_botonCorreo p,
+.footer_columna2_cajita_tel p {
+    margin-left: 0.5rem;
+    font-size: 1rem; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer_columna3_cajita_botonCorreo:hover p,
+.footer_columna2_cajita_tel:hover p {
+    color: #EF1923; /* Change text color on hover */
+}
+
+/* Margin adjustments */
+.footer_columna3_cajita_botonCorreo {
+    margin-right: 10rem;
+}
+
+.footer_columna2_cajita_tel {
+    margin-left: 17rem;
+}
+
+.footer_columna2_cajita_redes p {
+    display: block;
+    margin-left: 15rem;
+    margin-right: 2rem;
+}
+
+/* Styling for footer icons and cactus images */
+.cactusFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cactusFooter img {
+    width: 3rem;
+}
+
+/* Navigation links in the footer */
+.header_nav_container_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav_container_footer a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header_nav_container_footer a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #EF1923; /* Change text color on hover */
+}
+
+.footer_telefono_logo_columna2{
+    width: 3rem;
+}
+.footer_contacto_logo_columna2
+{
+    width: 3rem;
+}
+
+/* Responsive Design for Footer */
+@media(max-width: 479px) {
+    .footer_columna1_contenedor_img img {
+        width: 15rem;
+    }
+
+    .footer_columna2_contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .footer_columna2_contenedor img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .footer_columna2_contenedor h3 {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    .footer_columna2_contenedor p {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .footer_columna3_cajita_botonFlecha {
+        display: none;
+    }
+
+    .footer_columna3_cajita_botonCorreo img {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .footer_columna3_cajita_botonCorreo p {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer_columna2_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .footer_columna3_cajita_botonFlecha {
+        display: none;
+    }
+}
+
+@media(max-width: 884px) {
+    .footer_columna2_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .footer_columna3_cajita_botonFlecha {
+        display: none;
+    }
+}

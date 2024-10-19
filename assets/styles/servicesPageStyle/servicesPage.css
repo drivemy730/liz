@@ -1,0 +1,257 @@
+
+
+/* Article Styles */
+.serviciosTextosCabecera {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+
+}
+
+.serviciosGrid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 1fr;
+    grid-gap: 2rem;
+    margin: 3rem 0;
+}
+
+.serviciosGrid p {
+    font-size: 1.3rem;
+    font-family: Kodchasan;
+}
+
+.imagenesIzquierda,
+.imagenesDerecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+}
+
+.imagenesIzquierda img,
+.imagenesDerecha img {
+    width: 16rem;
+}
+
+/* Service Text Styles */
+.serviciosTextoCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem; /* Adjusted padding for compactness */
+    max-width: 800px; /* Set a max width for better layout */
+    margin: auto; /* Center the content */
+    
+}
+
+.serviciosTextoCentro p {
+    font-size: 1.3rem; /* Slightly larger font size */
+    font-weight: bold;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 0.5rem; /* Space between image and text */
+    margin: 0.5rem 0; /* Top and bottom margin */
+    color: #ffffff; /* Darker text color for better contrast */
+    padding-left: 0.5rem; /* Padding on the left for spacing */
+    border-left: 4px solid #07A4A9; /* Accent border on the left */
+    transition: color 0.3s, border-left-color 0.3s, font-weight 0.3s; /* Smooth transitions */
+}
+
+.serviciosTextoCentro p:hover {
+    color: #0056b3; /* Stronger, darker blue for better contrast */
+    border-left-color: #FFB70D; /* Bright yellow left border on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+
+
+.serviciosTextoCentro div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between items */
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); /* Gradient background */
+    color: white; /* Text color */
+    padding: 0.75rem 1rem; /* Adjusted padding for a more compact look */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Width of the item */
+    margin: 0.5rem 0; /* Margin between items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.serviciosTextoCentro div:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+
+.muchoMasContainer {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Full width of the container */
+    margin: 2rem 0; /* Vertical spacing */
+    margin-bottom: 5rem;
+}
+
+#muchoMas {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-family: 'Kodchasan', sans-serif; /* Use the desired font */
+    background: #07A4A9; /* Optional: background color */
+    color: white; /* Text color */
+    padding: 1rem; /* Padding for visual appeal */
+    width: 87%; /* Full width */
+    text-align: center; /* Center the text */
+    border-radius: 10px;
+    background: linear-gradient(90deg, #07A4A9, #FFB70D);
+}
+
+
+
+
+button {
+    background-color: #07A4A9;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Kodchasan', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+    background-color: #FFB70D;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Logo Styles */
+.instagramLogoServicios {
+    width: 3rem;
+}
+
+/* Section Background */
+.sesion2-servicios {
+    background-color: #07A4A9;
+}
+
+/* Title Styles */
+.serviciosTitulo {
+    font-size: 1.8rem; /* Increase font size */
+    font-family: Kodchasan; /* Keep your font */
+    text-shadow: 0px 4px 4px #0DADB2; /* Retain the shadow */
+    font-weight: 700; /* Make it bolder */
+    text-align: center; /* Center align */
+    margin: 4rem 0; /* Top and bottom margin */
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); /* Gradient background */
+    width: 87%; /* Full width */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    margin: 1rem auto; /* Center horizontally with auto */
+    padding: 1rem; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.serviciosTitulo:hover {
+    background: linear-gradient(90deg, #FFB70D, #07A4A9); /* Reverse gradient on hover */
+}
+
+.serviciosSubtitulo {
+    font-size: 1.5rem; /* Adjust size */
+    font-family: Kodchasan; /* Keep your font */
+    text-align: center; /* Center align */
+    color: #333; /* Color for contrast */
+    margin-top: 1rem; /* Top margin */
+    padding: 0.5rem; /* Padding for spacing */
+    background: #07A4A9; /* Background color */
+    width: 87%; /* Full width */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    margin: 1rem auto; /* Center horizontally with auto */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.serviciosSubtitulo:hover {
+    background: #FFB70D; /* Change background on hover */
+}
+
+
+
+.flechaGrooming img{
+    width: 1.9rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video container */
+    align-items: center;     /* Center the video container vertically */
+    margin: 2rem 0;          /* Add some space around the container */
+    margin-bottom: 5rem;
+}
+
+.responsive-video {
+    width: 300px;  /* Set the width of the video */
+    height: 300px; /* Set the height of the video */
+    border-radius: 60%; /* Make the video circular */
+    object-fit: cover; /* Cover the container area without distorting the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow effect */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 769px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header_nav_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviciosTitulo {
+        font-size: 2rem;
+    }
+
+   
+
+    .imagenesIzquierda,
+    .imagenesDerecha {
+        flex-direction: column;
+    }
+
+    .serviciosGrid {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+    }
+}

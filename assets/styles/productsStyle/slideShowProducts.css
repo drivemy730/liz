@@ -1,0 +1,183 @@
+
+
+h1{
+    text-align: center; /* Center the text */
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: 700; /* Make the font bolder */
+    text-shadow: 0px 4px 4px #0DADB2; /* Keep the text shadow */
+    font-family: Kodchasan; /* Keep your font */
+    margin-top: 4rem; /* Top margin */
+    margin-bottom: 4.5rem; /* Bottom margin */
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); /* Add a gradient background */
+    width: 90%;
+    color: white; /* Change text color for contrast */
+    padding: 1rem; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    border-bottom: 4px solid #FFB70D; /* Optional underline */
+    transition: background 0.3s; /* Smooth background transition */
+    background: linear-gradient(90deg, #FFB70D, #07A4A9); /* Reverse gradient on hover */
+}
+
+.cart-title
+{
+    display: flex;
+    justify-content: space-around;
+}
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #ff8a00;
+    margin-top: 6rem;
+    letter-spacing: 0.05em;
+    padding: 0;
+    gap: 8rem;
+}
+
+.colorBonesContainer, .superHeroesBoneContainer, .medalionContainer
+{
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.image-main-div 
+{
+    flex: 1; /* Allow this div to grow and fill available space */
+    display: flex;
+    flex-direction: column; /* Ensure inner content is aligned correctly */
+    align-items: center; /* Center items horizontally */
+}
+
+.left-arrow
+{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.columnaProductos
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.medalionContainer
+{
+    margin-bottom: 5rem;
+}
+
+.arrow:hover {
+    color: #ff8a00;
+}
+
+.arrow {
+    font-size: 3rem;
+    color: #ff8a00;
+    cursor: pointer;
+}
+ 
+
+.productoUno,.productoDos,.productoTres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #07A4A9, #FFB70D); 
+    border: 2px solid #ff8a00;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 20rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.productoUno:hover, .productoDos:hover, .productoTres:hover {
+    transform: translateY(-5px);
+}
+
+.imgProducto
+{
+    width: 11rem;
+    border-radius: 8px;
+
+}
+
+.imgProducto:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+p{
+    padding: 0;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: Kodchasan;
+    text-align: center;
+    
+}
+
+
+.cart-item-info h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Kodchasan;
+    margin-bottom: 1rem;
+    transition: color 0.3s, border-left-color 0.3s, font-weight 0.3s;
+}
+
+.cart-item-info h3:hover
+{
+   
+    color: #0056b3; /* Stronger, darker blue for better contrast */
+    border-left-color: #FFB70D; /* Bright yellow left border on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+}
+
+
+.cart-item-remove {
+    background-color: #07A4A9;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Kodchasan', sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cart-item-remove:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+.cart-item-remove:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cart-item-remove:hover {
+    background-color: #FFB70D;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
